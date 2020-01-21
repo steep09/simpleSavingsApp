@@ -25,7 +25,20 @@ class MainViewController: UIViewController {
     var expenseYearly : NSNumber = 0
     
     var monthlyTotalSample : MonthlyTotal!
-    var monthlyTotalList = [MonthlyTotal]()
+    var monthlyTotalList : [MonthlyTotal] =
+        [MonthlyTotal(month: "January", totalExpense: "₱0.00"),
+         MonthlyTotal(month: "Febuary", totalExpense: "₱0.00"),
+         MonthlyTotal(month: "March", totalExpense: "₱0.00"),
+         MonthlyTotal(month: "April", totalExpense: "₱0.00"),
+         MonthlyTotal(month: "May", totalExpense: "₱0.00"),
+         MonthlyTotal(month: "June", totalExpense: "₱0.00"),
+         MonthlyTotal(month: "July", totalExpense: "₱0.00"),
+         MonthlyTotal(month: "August", totalExpense: "₱0.00"),
+         MonthlyTotal(month: "September", totalExpense: "₱0.00"),
+         MonthlyTotal(month: "October", totalExpense: "₱0.00"),
+         MonthlyTotal(month: "November", totalExpense: "₱0.00"),
+         MonthlyTotal(month: "December", totalExpense: "₱0.00")
+    ]
     var totalSaved : NSNumber = 0
     
     let firstRun = UserDefaults.standard.bool(forKey: "firstRun") as Bool
@@ -43,9 +56,6 @@ class MainViewController: UIViewController {
         tableView.delegate = self
         
         tableView.backgroundColor = .white
-        
-        monthlyTotalSample = MonthlyTotal(month: "January", totalExpense: "₱0.00")
-        monthlyTotalList.append(monthlyTotalSample)
         
         if firstRun {
             //function you want to run normally
@@ -76,48 +86,6 @@ extension MainViewController {
         UserDefaults.standard.set(true, forKey: "firstRun")
     }
     
-    func retieveData() {
-        
-        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        let managedContext = appdelegate.persistentContainer.viewContext
-        
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Savings")
-        
-        do {
-            let result = try managedContext.fetch(request)
-            print("\(result[0])")
-            print("----------")
-            for data in result as! [NSManagedObject] {
-                
-                let priceString = self.currencyFormatter().string(from: self.totalSaved)!
-                self.totalSavedLbl.text = "\(priceString)"
-                
-                print("\(data.value(forKey: "totalSaved"))")
-                
-            }
-        } catch {
-            print("Failed")
-        }
-        
-    }
-    
-    func createData() {
-        //ADDING TO COREDATA
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        let managedcontext = appDelegate.persistentContainer.viewContext
-        let userEntity = NSEntityDescription.entity(forEntityName: "Savings", in: managedcontext)!
-        
-        let savings = NSManagedObject(entity: userEntity, insertInto: managedcontext)
-        
-        savings.setValue(totalSaved, forKey: "totalSaved")
-        
-        do {
-            try managedcontext.save()
-        } catch let error as NSError {
-            print("could not save data \(error), \(error.userInfo)")
-        }
-    }
-    
     func currencyFormatter() -> NumberFormatter {
         let currencyFormatter = NumberFormatter()
         currencyFormatter.usesGroupingSeparator = true
@@ -145,10 +113,11 @@ extension MainViewController {
             var totalNumber : Double = 0
             if math == "Add" {
                 totalNumber = Double(gotNumber) + Double(newNumber)
-                
+                self.updateData(updateSaved: totalNumber)
                 
             } else if math == "Subtract" {
                 totalNumber = Double(gotNumber) - Double(newNumber)
+                self.updateData(updateSaved: totalNumber)
             } else {
 //                TEMPORARY DISABLE THIS FUNCTION 
 //                totalNumber = Double(gotNumber) - Double(newNumber)

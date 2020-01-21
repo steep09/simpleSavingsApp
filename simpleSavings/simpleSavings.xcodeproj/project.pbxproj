@@ -21,6 +21,7 @@
 		A75B11DE23CF030900D9079B /* ExpenseVieController+TableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B11DD23CF030900D9079B /* ExpenseVieController+TableViewDatasource.swift */; };
 		A75B11E023CF05A500D9079B /* MonthlyTotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B11DF23CF05A500D9079B /* MonthlyTotal.swift */; };
 		A75B11E223CF062E00D9079B /* MonthlyTotalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B11E123CF062E00D9079B /* MonthlyTotalCell.swift */; };
+		A7B139ED23D6C838008E871A /* savingsCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B139EC23D6C838008E871A /* savingsCoreData.swift */; };
 		A7FEE2AA23CA323000080DCE /* UIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEE2A923CA323000080DCE /* UIViews.swift */; };
 		A7FEE2AC23CA323A00080DCE /* UIButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEE2AB23CA323A00080DCE /* UIButtons.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		A75B11DD23CF030900D9079B /* ExpenseVieController+TableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpenseVieController+TableViewDatasource.swift"; sourceTree = "<group>"; };
 		A75B11DF23CF05A500D9079B /* MonthlyTotal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyTotal.swift; sourceTree = "<group>"; };
 		A75B11E123CF062E00D9079B /* MonthlyTotalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyTotalCell.swift; sourceTree = "<group>"; };
+		A7B139EC23D6C838008E871A /* savingsCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savingsCoreData.swift; sourceTree = "<group>"; };
 		A7FEE2A923CA323000080DCE /* UIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViews.swift; sourceTree = "<group>"; };
 		A7FEE2AB23CA323A00080DCE /* UIButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 		A739840723CD94AD003396A0 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A7B139EB23D6C807008E871A /* SavingsCoreData */,
 				A7321F8323C5E430006920D9 /* MainViewController.swift */,
 				A739840523CD9495003396A0 /* MainViewController+TableViewDatasource.swift */,
 			);
@@ -150,6 +153,14 @@
 				A75B11DF23CF05A500D9079B /* MonthlyTotal.swift */,
 			);
 			path = Month;
+			sourceTree = "<group>";
+		};
+		A7B139EB23D6C807008E871A /* SavingsCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A7B139EC23D6C838008E871A /* savingsCoreData.swift */,
+			);
+			path = SavingsCoreData;
 			sourceTree = "<group>";
 		};
 		A7FEE2A623CA320600080DCE /* Extensions */ = {
@@ -238,6 +249,7 @@
 				A7321F8423C5E430006920D9 /* MainViewController.swift in Sources */,
 				A7321F8023C5E430006920D9 /* AppDelegate.swift in Sources */,
 				A7321F8223C5E430006920D9 /* SceneDelegate.swift in Sources */,
+				A7B139ED23D6C838008E871A /* savingsCoreData.swift in Sources */,
 				A7FEE2AC23CA323A00080DCE /* UIButtons.swift in Sources */,
 				A751121523CAB01000212B1A /* ExpenseCell.swift in Sources */,
 				A75B11E223CF062E00D9079B /* MonthlyTotalCell.swift in Sources */,

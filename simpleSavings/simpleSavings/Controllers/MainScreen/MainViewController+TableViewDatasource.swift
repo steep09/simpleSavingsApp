@@ -20,7 +20,24 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.configureCell(monthlyTotal: monthlyTotalCount)
         
+        let date = Date()
+        let df = DateFormatter()
+        df.dateFormat = "MMMM"
+        let monthToString = df.string(from: date)
+        print(monthToString)
+        
+        //CHECK IF THE CURRENT MONTH IS THE SAME AS THE MONTH IN THE LABEL
+        if cell.month.text != monthToString {
+            cell.isUserInteractionEnabled = false
+        }
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+
+        return "YEARLY LOG"
+
     }
     
 }
