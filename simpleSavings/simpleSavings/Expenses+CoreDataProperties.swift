@@ -2,7 +2,7 @@
 //  Expenses+CoreDataProperties.swift
 //  simpleSavings
 //
-//  Created by Stephenson Ang on 1/20/20.
+//  Created by Stephenson Ang on 1/22/20.
 //  Copyright © 2020 Stephenson Ang. All rights reserved.
 //
 //
@@ -17,8 +17,8 @@ extension Expenses {
         return NSFetchRequest<Expenses>(entityName: "Expenses")
     }
 
-    @NSManaged public var totalMonthlyExpense: Double
     @NSManaged public var month: String?
+    @NSManaged public var totalMonthlyExpense: Double
     @NSManaged public var details: NSSet?
 
 }

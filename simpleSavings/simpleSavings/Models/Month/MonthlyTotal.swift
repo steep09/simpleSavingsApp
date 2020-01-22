@@ -11,9 +11,9 @@ import Foundation
 class MonthlyTotal {
     
     var month: String!
-    var totalExpense: String!
+    var totalExpense: Double!
     
-    init(month: String, totalExpense: String) {
+    init(month: String, totalExpense: Double) {
         self.month = month
         self.totalExpense = totalExpense
     }

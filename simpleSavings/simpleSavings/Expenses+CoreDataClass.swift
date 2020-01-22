@@ -2,7 +2,7 @@
 //  Expenses+CoreDataClass.swift
 //  simpleSavings
 //
-//  Created by Stephenson Ang on 1/20/20.
+//  Created by Stephenson Ang on 1/22/20.
 //  Copyright © 2020 Stephenson Ang. All rights reserved.
 //
 //

@@ -69,10 +69,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vb-1A-9Er">
-                                <rect key="frame" x="20" y="353" width="374" height="489"/>
+                                <rect key="frame" x="20" y="321" width="374" height="521"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SKz-L3-LDk">
-                                        <rect key="frame" x="8" y="8" width="358" height="399"/>
+                                        <rect key="frame" x="8" y="8" width="358" height="431"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
@@ -134,7 +134,7 @@
                                         </prototypes>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₱0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MT2-3O-KeV">
-                                        <rect key="frame" x="196" y="415" width="170" height="66"/>
+                                        <rect key="frame" x="196" y="447" width="170" height="66"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="HBq-VR-xAT"/>
                                             <constraint firstAttribute="width" constant="170" id="YHd-IP-c9q"/>
@@ -144,7 +144,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Expense:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ga-8i-i6J">
-                                        <rect key="frame" x="8" y="415" width="170" height="66"/>
+                                        <rect key="frame" x="8" y="447" width="170" height="66"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="JZP-M5-6Fo"/>
                                             <constraint firstAttribute="width" constant="170" id="uaE-Ig-AvA"/>
@@ -169,40 +169,22 @@
                                     <constraint firstItem="MT2-3O-KeV" firstAttribute="top" secondItem="SKz-L3-LDk" secondAttribute="bottom" constant="8" id="wCm-gb-Dqk"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg3-CK-LDC">
-                                <rect key="frame" x="20" y="305" width="374" height="33"/>
-                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="cuC-bI-Hdg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
-                                <state key="normal" title="Add Expense">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="addExpenseBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xa8-Pc-es5"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="OJv-Dn-jKK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="5ux-i4-a1d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OJv-Dn-jKK" secondAttribute="trailing" constant="40" id="8eO-eN-QWd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dg3-CK-LDC" secondAttribute="trailing" constant="20" id="FiB-bW-sKF"/>
+                            <constraint firstItem="4vb-1A-9Er" firstAttribute="top" secondItem="OJv-Dn-jKK" secondAttribute="bottom" constant="50" id="C6q-5N-bmz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4vb-1A-9Er" secondAttribute="trailing" constant="20" id="GRT-sC-tdZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4vb-1A-9Er" secondAttribute="bottom" constant="20" id="OfI-Wk-AnH"/>
                             <constraint firstItem="OJv-Dn-jKK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="P6j-kb-MoR"/>
-                            <constraint firstItem="Dg3-CK-LDC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XUH-FT-K9O"/>
                             <constraint firstItem="4vb-1A-9Er" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XoJ-ts-utt"/>
                             <constraint firstItem="OJv-Dn-jKK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pvh-Gh-lnU"/>
-                            <constraint firstItem="4vb-1A-9Er" firstAttribute="top" secondItem="Dg3-CK-LDC" secondAttribute="bottom" constant="15" id="ytl-O2-aMS"/>
-                            <constraint firstItem="Dg3-CK-LDC" firstAttribute="top" secondItem="OJv-Dn-jKK" secondAttribute="bottom" constant="34" id="yzv-Wv-UrH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Savings" id="eed-Kc-Wsh"/>
                     <connections>
-                        <outlet property="addExpenseBtn" destination="Dg3-CK-LDC" id="vNi-X5-B6H"/>
                         <outlet property="dateTodayLbl" destination="PYK-65-FQm" id="laO-Te-0Hb"/>
                         <outlet property="editSavingsBtn" destination="xDP-tR-PPa" id="upW-nL-l9z"/>
                         <outlet property="expenseView" destination="4vb-1A-9Er" id="Ad7-lU-Zfz"/>

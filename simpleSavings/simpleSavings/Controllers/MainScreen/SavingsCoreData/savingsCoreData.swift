@@ -12,7 +12,7 @@ import CoreData
 extension MainViewController {
     
     //READ CORE DATA
-    func retieveData() {
+    func retrieveSavingsData() {
         
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appdelegate.persistentContainer.viewContext
@@ -27,7 +27,7 @@ extension MainViewController {
                 let priceString = self.currencyFormatter().string(from: self.totalSaved)!
                 self.totalSavedLbl.text = "\(priceString)"
                 
-                print("\(data.value(forKey: "totalSaved"))")
+//                print("\(data.value(forKey: "totalSaved"))")
                 
             }
         } catch {
@@ -37,7 +37,7 @@ extension MainViewController {
     }
     
     //UPDATE CORE DATA
-    func updateData(updateSaved: Double) {
+    func updateSavingsData(updateSaved: Double) {
         
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appdelegate.persistentContainer.viewContext
@@ -63,7 +63,7 @@ extension MainViewController {
         }
     }
     //ADD COREDATA
-    func createData() {
+    func createSavingsData() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedcontext = appDelegate.persistentContainer.viewContext
         let userEntity = NSEntityDescription.entity(forEntityName: "Savings", in: managedcontext)!
