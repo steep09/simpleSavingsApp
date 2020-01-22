@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MonthlyTotal {
+class ExpenseModel {
     
     var month: String!
     var totalExpense: Double!

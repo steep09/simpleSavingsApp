@@ -14,7 +14,7 @@ class ExpenseCell: UITableViewCell {
     @IBOutlet weak var expensePrice: UILabel!
     @IBOutlet weak var dateOfExpense: UILabel!
 
-    func configureCell(expense: Expense) {
+    func configureCell(expense: ExpenseDetailsModel) {
         self.expenseName.text = expense.expenseName
         self.expensePrice.text = expense.expensePrice
         self.dateOfExpense.text = expense.dateOfExpense

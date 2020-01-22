@@ -198,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
         </scene>
-        <!--Expense View Controller-->
+        <!--Expense Details View Controller-->
         <scene sceneID="WAI-da-oaR">
             <objects>
-                <viewController storyboardIdentifier="ExpenseViewController" id="u3A-hM-nPD" customClass="ExpenseViewController" customModule="simpleSavings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExpenseDetailsViewController" id="u3A-hM-nPD" customClass="ExpenseDetailsViewController" customModule="simpleSavings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RnG-Cg-52b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

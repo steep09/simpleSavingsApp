@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExpenseViewController: UIViewController {
+class ExpenseDetailsViewController: UIViewController {
     
     @IBOutlet weak var expenseView: UIView!
     @IBOutlet weak var addExpenseBtn: UIButton!
@@ -17,8 +17,8 @@ class ExpenseViewController: UIViewController {
     @IBOutlet weak var expensePriceTxtField: UITextField!
     @IBOutlet weak var totalExpenseLbl: UILabel!
     
-    var expenseSample : Expense!
-    var expenseList = [Expense]()
+    var expenseSample : ExpenseDetailsModel!
+    var expenseList = [ExpenseDetailsModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class ExpenseViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        expenseSample = Expense(expenseName: "Netflix", expensePrice: "₱650.00")
+        expenseSample = ExpenseDetailsModel(expenseName: "Netflix", expensePrice: "₱650.00")
         expenseList.append(expenseSample)
         
         
@@ -37,7 +37,7 @@ class ExpenseViewController: UIViewController {
     
     @IBAction func addExpenseBtnWasPressed(_ sender: Any) {
         
-        expenseSample = Expense(expenseName: expenseNameTxtField.text ?? "", expensePrice: expensePriceTxtField.text ?? "")
+        expenseSample = ExpenseDetailsModel(expenseName: expenseNameTxtField.text ?? "", expensePrice: expensePriceTxtField.text ?? "")
         expenseList.append(expenseSample)
         tableView.reloadData()
         expenseNameTxtField.text = ""

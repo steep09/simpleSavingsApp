@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Expense {
+class ExpenseDetailsModel {
     
     var expenseName: String!
     var expensePrice: String!
