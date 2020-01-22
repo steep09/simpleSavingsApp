@@ -11,12 +11,12 @@ import UIKit
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return expensesLogList.count
+        return monthlyTotalList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MonthlyTotalCell") as? MonthlyTotalCell else { return UITableViewCell() }
-        let monthlyTotalCount = expensesLogList[indexPath.row]
+        let monthlyTotalCount = monthlyTotalList[indexPath.row]
         
         cell.configureCell(monthlyTotal: monthlyTotalCount)
         
@@ -40,7 +40,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let returnedView = UIView(frame: CGRect(x: 0, y: 100, width: 350, height: 100)) //set these values as necessary
         returnedView.backgroundColor = #colorLiteral(red: 0.5807225108, green: 0.066734083, blue: 0, alpha: 1)
-        print("\(returnedView.frame.size.width)")
 
         let label = UILabel(frame: CGRect(x: 10, y: 5, width: returnedView.frame.size.width, height: 20))
 

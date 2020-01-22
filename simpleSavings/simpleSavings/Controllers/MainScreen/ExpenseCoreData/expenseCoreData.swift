@@ -21,7 +21,6 @@ extension MainViewController {
             do {
                 let result = try managedContext.fetch(request)
                 for data in result as! [NSManagedObject] {
-                    print(result.count)
                     expensesLogList.append(MonthlyTotal(month: data.value(forKey: "month") as! String, totalExpense: data.value(forKey: "totalMonthlyExpense") as! Double))
                     
                 }
@@ -40,14 +39,16 @@ extension MainViewController {
         
         
         var x = 0
-        print("-----\(monthlyTotalList.count)")
         while x < monthlyTotalList.count {
             let expenses = NSManagedObject(entity: userEntity, insertInto: managedcontext)
             
             expenses.setValue(monthlyTotalList[x].month, forKey: "month")
             expenses.setValue(monthlyTotalList[x].totalExpense, forKey: "totalMonthlyExpense")
+            
             x += 1
         }
+        
+        
         
         do {
             try managedcontext.save()

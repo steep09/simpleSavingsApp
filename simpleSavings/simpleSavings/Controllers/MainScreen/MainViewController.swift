@@ -23,7 +23,6 @@ class MainViewController: UIViewController {
     @IBOutlet weak var totalYearlyExpense: UILabel!
     var expenseYearly : NSNumber = 0
     
-    var monthlyTotalSample : MonthlyTotal!
     var monthlyTotalList : [MonthlyTotal] =
         [MonthlyTotal(month: "January", totalExpense: 0.00),
          MonthlyTotal(month: "Febuary", totalExpense: 0.00),
@@ -89,7 +88,7 @@ extension MainViewController {
     func runFirst() {
         print("FIRST RUN!")
         createSavingsData()
-        UserDefaults.standard.set(true, forKey: "firstRun")
+//        UserDefaults.standard.set(true, forKey: "firstRun")
     }
     
     func currencyFormatter() -> NumberFormatter {
