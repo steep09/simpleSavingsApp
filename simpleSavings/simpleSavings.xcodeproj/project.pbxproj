@@ -15,16 +15,12 @@
 		A7321F8C23C5E431006920D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7321F8B23C5E431006920D9 /* Assets.xcassets */; };
 		A7321F8F23C5E431006920D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7321F8D23C5E431006920D9 /* LaunchScreen.storyboard */; };
 		A739840623CD9495003396A0 /* MainViewController+TableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A739840523CD9495003396A0 /* MainViewController+TableViewDatasource.swift */; };
-		A739840A23CDCB82003396A0 /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A739840923CDCB82003396A0 /* ExpenseViewController.swift */; };
+		A739840A23CDCB82003396A0 /* ExpenseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A739840923CDCB82003396A0 /* ExpenseDetailsViewController.swift */; };
 		A751121523CAB01000212B1A /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A751121423CAB01000212B1A /* ExpenseCell.swift */; };
-		A751121823CAB2C900212B1A /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A751121723CAB2C900212B1A /* Expense.swift */; };
-		A755E8CF23D834880016EC4B /* ExpenseDetails+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A755E8CD23D834880016EC4B /* ExpenseDetails+CoreDataClass.swift */; };
-		A755E8D023D834880016EC4B /* ExpenseDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A755E8CE23D834880016EC4B /* ExpenseDetails+CoreDataProperties.swift */; };
-		A755E8D323D834A80016EC4B /* Expenses+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A755E8D123D834A80016EC4B /* Expenses+CoreDataClass.swift */; };
-		A755E8D423D834A80016EC4B /* Expenses+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A755E8D223D834A80016EC4B /* Expenses+CoreDataProperties.swift */; };
-		A755E8D623D83AD40016EC4B /* expenseCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A755E8D523D83AD40016EC4B /* expenseCoreData.swift */; };
-		A75B11DE23CF030900D9079B /* ExpenseVieController+TableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B11DD23CF030900D9079B /* ExpenseVieController+TableViewDatasource.swift */; };
-		A75B11E023CF05A500D9079B /* MonthlyTotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B11DF23CF05A500D9079B /* MonthlyTotal.swift */; };
+		A751121823CAB2C900212B1A /* ExpenseDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A751121723CAB2C900212B1A /* ExpenseDetailsModel.swift */; };
+		A75995D023D8BBB100A8502C /* expensesCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75995CF23D8BBB100A8502C /* expensesCoreData.swift */; };
+		A75B11DE23CF030900D9079B /* ExpenseDetailsVieController+TableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B11DD23CF030900D9079B /* ExpenseDetailsVieController+TableViewDatasource.swift */; };
+		A75B11E023CF05A500D9079B /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B11DF23CF05A500D9079B /* ExpenseModel.swift */; };
 		A75B11E223CF062E00D9079B /* MonthlyTotalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B11E123CF062E00D9079B /* MonthlyTotalCell.swift */; };
 		A7B139ED23D6C838008E871A /* savingsCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B139EC23D6C838008E871A /* savingsCoreData.swift */; };
 		A7FEE2AA23CA323000080DCE /* UIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEE2A923CA323000080DCE /* UIViews.swift */; };
@@ -42,16 +38,12 @@
 		A7321F8E23C5E431006920D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7321F9023C5E431006920D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A739840523CD9495003396A0 /* MainViewController+TableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableViewDatasource.swift"; sourceTree = "<group>"; };
-		A739840923CDCB82003396A0 /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
+		A739840923CDCB82003396A0 /* ExpenseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailsViewController.swift; sourceTree = "<group>"; };
 		A751121423CAB01000212B1A /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
-		A751121723CAB2C900212B1A /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
-		A755E8CD23D834880016EC4B /* ExpenseDetails+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExpenseDetails+CoreDataClass.swift"; path = "simpleSavings/ExpenseDetails+CoreDataClass.swift"; sourceTree = "<group>"; };
-		A755E8CE23D834880016EC4B /* ExpenseDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ExpenseDetails+CoreDataProperties.swift"; path = "simpleSavings/ExpenseDetails+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		A755E8D123D834A80016EC4B /* Expenses+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Expenses+CoreDataClass.swift"; path = "simpleSavings/Expenses+CoreDataClass.swift"; sourceTree = "<group>"; };
-		A755E8D223D834A80016EC4B /* Expenses+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Expenses+CoreDataProperties.swift"; path = "simpleSavings/Expenses+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		A755E8D523D83AD40016EC4B /* expenseCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expenseCoreData.swift; sourceTree = "<group>"; };
-		A75B11DD23CF030900D9079B /* ExpenseVieController+TableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpenseVieController+TableViewDatasource.swift"; sourceTree = "<group>"; };
-		A75B11DF23CF05A500D9079B /* MonthlyTotal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyTotal.swift; sourceTree = "<group>"; };
+		A751121723CAB2C900212B1A /* ExpenseDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailsModel.swift; sourceTree = "<group>"; };
+		A75995CF23D8BBB100A8502C /* expensesCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expensesCoreData.swift; sourceTree = "<group>"; };
+		A75B11DD23CF030900D9079B /* ExpenseDetailsVieController+TableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpenseDetailsVieController+TableViewDatasource.swift"; sourceTree = "<group>"; };
+		A75B11DF23CF05A500D9079B /* ExpenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModel.swift; sourceTree = "<group>"; };
 		A75B11E123CF062E00D9079B /* MonthlyTotalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyTotalCell.swift; sourceTree = "<group>"; };
 		A7B139EC23D6C838008E871A /* savingsCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savingsCoreData.swift; sourceTree = "<group>"; };
 		A7FEE2A923CA323000080DCE /* UIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViews.swift; sourceTree = "<group>"; };
@@ -72,10 +64,6 @@
 		A7321F7323C5E430006920D9 = {
 			isa = PBXGroup;
 			children = (
-				A755E8D123D834A80016EC4B /* Expenses+CoreDataClass.swift */,
-				A755E8D223D834A80016EC4B /* Expenses+CoreDataProperties.swift */,
-				A755E8CD23D834880016EC4B /* ExpenseDetails+CoreDataClass.swift */,
-				A755E8CE23D834880016EC4B /* ExpenseDetails+CoreDataProperties.swift */,
 				A7321F7E23C5E430006920D9 /* simpleSavings */,
 				A7321F7D23C5E430006920D9 /* Products */,
 			);
@@ -93,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				A7FEE2A623CA320600080DCE /* Extensions */,
+				A75995D223D8BFCC00A8502C /* CoreData */,
 				A7321F9823C5FDAD006920D9 /* Models */,
 				A7321F9723C5FDA7006920D9 /* Views */,
 				A7321F9623C5FD94006920D9 /* Controllers */,
@@ -111,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				A739840723CD94AD003396A0 /* MainScreen */,
-				A739840823CDCB62003396A0 /* ExpenseScreen */,
+				A739840823CDCB62003396A0 /* ExpenseDetailsScreen */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,7 +116,8 @@
 		A7321F9823C5FDAD006920D9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A751121623CAB2B700212B1A /* Month */,
+				A751121723CAB2C900212B1A /* ExpenseDetailsModel.swift */,
+				A75B11DF23CF05A500D9079B /* ExpenseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -135,22 +125,19 @@
 		A739840723CD94AD003396A0 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A755E8C423D830ED0016EC4B /* ExpenseDetailsCoreData */,
-				A755E8C323D830DE0016EC4B /* ExpenseCoreData */,
-				A7B139EB23D6C807008E871A /* SavingsCoreData */,
 				A7321F8323C5E430006920D9 /* MainViewController.swift */,
 				A739840523CD9495003396A0 /* MainViewController+TableViewDatasource.swift */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
 		};
-		A739840823CDCB62003396A0 /* ExpenseScreen */ = {
+		A739840823CDCB62003396A0 /* ExpenseDetailsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A739840923CDCB82003396A0 /* ExpenseViewController.swift */,
-				A75B11DD23CF030900D9079B /* ExpenseVieController+TableViewDatasource.swift */,
+				A739840923CDCB82003396A0 /* ExpenseDetailsViewController.swift */,
+				A75B11DD23CF030900D9079B /* ExpenseDetailsVieController+TableViewDatasource.swift */,
 			);
-			path = ExpenseScreen;
+			path = ExpenseDetailsScreen;
 			sourceTree = "<group>";
 		};
 		A751121323CAAFEF00212B1A /* Cells */ = {
@@ -162,28 +149,21 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		A751121623CAB2B700212B1A /* Month */ = {
-			isa = PBXGroup;
-			children = (
-				A751121723CAB2C900212B1A /* Expense.swift */,
-				A75B11DF23CF05A500D9079B /* MonthlyTotal.swift */,
-			);
-			path = Month;
-			sourceTree = "<group>";
-		};
-		A755E8C323D830DE0016EC4B /* ExpenseCoreData */ = {
-			isa = PBXGroup;
-			children = (
-				A755E8D523D83AD40016EC4B /* expenseCoreData.swift */,
-			);
-			path = ExpenseCoreData;
-			sourceTree = "<group>";
-		};
 		A755E8C423D830ED0016EC4B /* ExpenseDetailsCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				A75995CF23D8BBB100A8502C /* expensesCoreData.swift */,
 			);
 			path = ExpenseDetailsCoreData;
+			sourceTree = "<group>";
+		};
+		A75995D223D8BFCC00A8502C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A7B139EB23D6C807008E871A /* SavingsCoreData */,
+				A755E8C423D830ED0016EC4B /* ExpenseDetailsCoreData */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		A7B139EB23D6C807008E871A /* SavingsCoreData */ = {
@@ -274,23 +254,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A75B11E023CF05A500D9079B /* MonthlyTotal.swift in Sources */,
-				A751121823CAB2C900212B1A /* Expense.swift in Sources */,
+				A75B11E023CF05A500D9079B /* ExpenseModel.swift in Sources */,
+				A751121823CAB2C900212B1A /* ExpenseDetailsModel.swift in Sources */,
 				A739840623CD9495003396A0 /* MainViewController+TableViewDatasource.swift in Sources */,
-				A755E8D623D83AD40016EC4B /* expenseCoreData.swift in Sources */,
-				A755E8D323D834A80016EC4B /* Expenses+CoreDataClass.swift in Sources */,
-				A755E8D423D834A80016EC4B /* Expenses+CoreDataProperties.swift in Sources */,
 				A7321F8423C5E430006920D9 /* MainViewController.swift in Sources */,
 				A7321F8023C5E430006920D9 /* AppDelegate.swift in Sources */,
-				A755E8CF23D834880016EC4B /* ExpenseDetails+CoreDataClass.swift in Sources */,
 				A7321F8223C5E430006920D9 /* SceneDelegate.swift in Sources */,
 				A7B139ED23D6C838008E871A /* savingsCoreData.swift in Sources */,
 				A7FEE2AC23CA323A00080DCE /* UIButtons.swift in Sources */,
+				A75995D023D8BBB100A8502C /* expensesCoreData.swift in Sources */,
 				A751121523CAB01000212B1A /* ExpenseCell.swift in Sources */,
 				A75B11E223CF062E00D9079B /* MonthlyTotalCell.swift in Sources */,
-				A755E8D023D834880016EC4B /* ExpenseDetails+CoreDataProperties.swift in Sources */,
-				A75B11DE23CF030900D9079B /* ExpenseVieController+TableViewDatasource.swift in Sources */,
-				A739840A23CDCB82003396A0 /* ExpenseViewController.swift in Sources */,
+				A75B11DE23CF030900D9079B /* ExpenseDetailsVieController+TableViewDatasource.swift in Sources */,
+				A739840A23CDCB82003396A0 /* ExpenseDetailsViewController.swift in Sources */,
 				A7FEE2AA23CA323000080DCE /* UIViews.swift in Sources */,
 				A7321F8A23C5E430006920D9 /* simpleSavings.xcdatamodeld in Sources */,
 			);

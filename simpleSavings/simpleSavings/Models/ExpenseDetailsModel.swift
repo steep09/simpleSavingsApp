@@ -8,13 +8,13 @@
 
 import Foundation
 
-class Expense {
+class ExpenseDetailsModel {
     
     var expenseName: String!
-    var expensePrice: String!
+    var expensePrice: Double!
     var dateOfExpense: String!
     
-    init(expenseName: String, expensePrice: String) {
+    init(expenseName: String, expensePrice: Double) {
         self.expenseName = expenseName
         self.expensePrice = expensePrice
         

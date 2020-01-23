@@ -23,22 +23,21 @@ class MainViewController: UIViewController {
     @IBOutlet weak var totalYearlyExpense: UILabel!
     var expenseYearly : NSNumber = 0
     
-    var monthlyTotalSample : MonthlyTotal!
-    var monthlyTotalList : [MonthlyTotal] =
-        [MonthlyTotal(month: "January", totalExpense: 0.00),
-         MonthlyTotal(month: "Febuary", totalExpense: 0.00),
-         MonthlyTotal(month: "March", totalExpense: 0.00),
-         MonthlyTotal(month: "April", totalExpense: 0.00),
-         MonthlyTotal(month: "May", totalExpense: 0.00),
-         MonthlyTotal(month: "June", totalExpense: 0.00),
-         MonthlyTotal(month: "July", totalExpense: 0.00),
-         MonthlyTotal(month: "August", totalExpense: 0.00),
-         MonthlyTotal(month: "September", totalExpense: 0.00),
-         MonthlyTotal(month: "October", totalExpense: 0.00),
-         MonthlyTotal(month: "November", totalExpense: 0.00),
-         MonthlyTotal(month: "December", totalExpense: 0.00)
+    var monthlyTotalList : [ExpenseModel] =
+        [ExpenseModel(month: "January", totalExpense: 0.00),
+         ExpenseModel(month: "Febuary", totalExpense: 0.00),
+         ExpenseModel(month: "March", totalExpense: 0.00),
+         ExpenseModel(month: "April", totalExpense: 0.00),
+         ExpenseModel(month: "May", totalExpense: 0.00),
+         ExpenseModel(month: "June", totalExpense: 0.00),
+         ExpenseModel(month: "July", totalExpense: 0.00),
+         ExpenseModel(month: "August", totalExpense: 0.00),
+         ExpenseModel(month: "September", totalExpense: 0.00),
+         ExpenseModel(month: "October", totalExpense: 0.00),
+         ExpenseModel(month: "November", totalExpense: 0.00),
+         ExpenseModel(month: "December", totalExpense: 0.00)
     ]
-    var expensesLogList = [MonthlyTotal]()
+    var expensesLogList = [ExpenseModel]()
     var totalSaved : NSNumber = 0
     
     let firstRun = UserDefaults.standard.bool(forKey: "firstRun") as Bool
@@ -61,12 +60,9 @@ class MainViewController: UIViewController {
         
         if firstRun {
             //function you want to run normally
-            retrieveExpensesData()
             retrieveSavingsData()
         } else {
             runFirst() //will only run once
-            createExpenseData()
-            retrieveExpensesData()
             retrieveSavingsData()
             
         }

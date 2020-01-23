@@ -13,10 +13,25 @@ class ExpenseCell: UITableViewCell {
     @IBOutlet weak var expenseName: UILabel!
     @IBOutlet weak var expensePrice: UILabel!
     @IBOutlet weak var dateOfExpense: UILabel!
+    
+    var expenseprice : NSNumber = 0
+    
+    func currencyFormatter() -> NumberFormatter {
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        // localize to your grouping and decimal separator
+        currencyFormatter.locale = Locale.current
+        return currencyFormatter
+    }
 
-    func configureCell(expense: Expense) {
+    func configureCell(expense: ExpenseDetailsModel) {
         self.expenseName.text = expense.expenseName
-        self.expensePrice.text = expense.expensePrice
+        
+        self.expenseprice = NSNumber(value: expense.expensePrice)
+        let priceString = self.currencyFormatter().string(from: self.expenseprice)!
+        
+        self.expensePrice.text = priceString
         self.dateOfExpense.text = expense.dateOfExpense
     }
 }

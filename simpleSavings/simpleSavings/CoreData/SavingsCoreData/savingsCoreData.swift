@@ -51,7 +51,7 @@ extension MainViewController {
             updateObject.setValue(updateSaved, forKey: "totalSaved")
             self.totalSaved = NSNumber(value: updateSaved)
             let priceString = self.currencyFormatter().string(from: self.totalSaved)!
-            print("--- \(priceString)")
+            
             self.totalSavedLbl.text = "\(priceString)"
             do {
                 try managedContext.save()

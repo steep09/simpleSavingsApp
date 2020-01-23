@@ -24,7 +24,7 @@ class MonthlyTotalCell: UITableViewCell {
         return currencyFormatter
     }
     
-    func configureCell(monthlyTotal: MonthlyTotal) {
+    func configureCell(monthlyTotal: ExpenseModel) {
         self.month.text = monthlyTotal.month
         
         self.monthlyExpense = NSNumber(value: 0.00)
