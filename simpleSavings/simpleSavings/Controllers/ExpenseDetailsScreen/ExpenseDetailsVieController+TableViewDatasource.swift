@@ -20,7 +20,7 @@ extension ExpenseDetailsViewController: UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ExpenseCell") as? ExpenseCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ExpenseDetailsCell") as? ExpenseDetailsCell else { return UITableViewCell() }
         let expenseCount = expenseList[indexPath.row]
         
         cell.configureCell(expense: expenseCount)

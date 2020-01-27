@@ -29,10 +29,6 @@ class ExpenseDetailsViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        expenseSample = ExpenseDetailsModel(expenseName: "Netflix", expensePrice: 650.00)
-        expenseList.append(expenseSample)
-        
-        
     }
     
     @IBAction func addExpenseBtnWasPressed(_ sender: Any) {

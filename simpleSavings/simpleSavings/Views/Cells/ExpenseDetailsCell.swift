@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExpenseCell: UITableViewCell {
+class ExpenseDetailsCell: UITableViewCell {
     
     @IBOutlet weak var expenseName: UILabel!
     @IBOutlet weak var expensePrice: UILabel!

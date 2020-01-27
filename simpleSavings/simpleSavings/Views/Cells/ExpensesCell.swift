@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MonthlyTotalCell: UITableViewCell {
+class ExpensesCell: UITableViewCell {
 
     @IBOutlet weak var month: UILabel!
     @IBOutlet weak var totalExpense: UILabel!

@@ -11,12 +11,12 @@ import UIKit
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return monthlyTotalList.count
+        return expensesLogList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MonthlyTotalCell") as? MonthlyTotalCell else { return UITableViewCell() }
-        let monthlyTotalCount = monthlyTotalList[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ExpensesCell") as? ExpensesCell else { return UITableViewCell() }
+        let monthlyTotalCount = expensesLogList[indexPath.row]
         
         cell.configureCell(monthlyTotal: monthlyTotalCount)
         

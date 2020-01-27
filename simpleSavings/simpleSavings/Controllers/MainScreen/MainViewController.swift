@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var totalYearlyExpense: UILabel!
     var expenseYearly : NSNumber = 0
     
-    var monthlyTotalList : [ExpenseModel] =
+    var expensesLogList : [ExpenseModel] =
         [ExpenseModel(month: "January", totalExpense: 0.00),
          ExpenseModel(month: "Febuary", totalExpense: 0.00),
          ExpenseModel(month: "March", totalExpense: 0.00),
@@ -37,7 +37,6 @@ class MainViewController: UIViewController {
          ExpenseModel(month: "November", totalExpense: 0.00),
          ExpenseModel(month: "December", totalExpense: 0.00)
     ]
-    var expensesLogList = [ExpenseModel]()
     var totalSaved : NSNumber = 0
     
     let firstRun = UserDefaults.standard.bool(forKey: "firstRun") as Bool
@@ -58,11 +57,11 @@ class MainViewController: UIViewController {
         tableView.layer.borderWidth = 2.0
         tableView.layer.borderColor = #colorLiteral(red: 0.5807225108, green: 0.066734083, blue: 0, alpha: 1)
         
-        if firstRun {
-            //function you want to run normally
+        if firstRun { //FUNCTION THAT RUNS EVERYTIME THE APP OPENS
             retrieveSavingsData()
-        } else {
-            runFirst() //will only run once
+        } else { //THIS WILL RUN ONCE AFTER INSTALLATION
+            runFirst()
+            createExpensesData(lists: expensesLogList)
             retrieveSavingsData()
             
         }
